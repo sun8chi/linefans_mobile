@@ -1,0 +1,102 @@
+a.card_product {
+  color: #333;
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  background: #fff;
+  box-shadow: 0 3px 6px rgba(106, 101, 87, 0.06);
+
+  .icon_like {
+    margin-left: auto;
+    margin-right: .25rem;
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #DCDCDC;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card_img {
+    position: relative;
+    border: 0;
+    border-radius: 0;
+    background-color: #F4F4F4;
+
+    img {
+      border-radius: 0;
+    }
+
+    span {
+      position: absolute;
+      left: 0;
+      top: 0;
+      background: #000;
+      color: #fff;
+      padding: 0.45rem;
+      writing-mode: vertical-lr;
+      border-radius: 3px 0px 8px 0;
+      letter-spacing: 0.15em;
+      font-size: 0.75rem;
+      // 隱藏店家名稱
+      display: none;
+    }
+  }
+
+  .info {
+    padding: 12px;
+
+    .store_name {
+      color: #828282;
+      font-size: 13px;
+    }
+
+    h4 {
+      line-height: 1.2rem;
+      font-size: 14px;
+      height: 32px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      letter-spacing: .07rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .price {
+      justify-content: flex-start;
+    }
+  }
+
+  &.recommend {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+
+    .info {
+      padding: 0 0.5rem;
+
+      .icon_like {
+        margin-left: auto;
+      }
+    }
+  }
+}
+
+.p_spc_name {
+  background: #e4e4e4;
+  padding: 4px 8px;
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 12px;
+  color: #666;
+  margin-top: 0;
+}
+
+.recommend_list {
+  padding: 0.5rem .25rem;
+}

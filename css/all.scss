@@ -1,0 +1,23 @@
+@import 'https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css';
+@import 'variables.scss';
+@import 'default.scss';
+@import 'grid.scss';
+
+
+// components
+@import '_media.scss';
+@import '_card.scss';
+@import '_footer.scss';
+@import '_form.scss';
+@import '_list.scss';
+
+
+// page
+@import 'home.scss';
+@import 'card_product.scss';
+@import 'product.scss';
+@import 'popup.scss';
+@import 'mini_cart.scss';
+@import 'cart.scss';
+@import 'cate.scss';
+

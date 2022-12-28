@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>LINEFans</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.1/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/all.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <img class="header_logo" src="img/logo.png" alt="">
+      <a class="header_icon" href="#">
+        <ion-icon class="headerIconOpen" name="search"></ion-icon>
+        <ion-icon class="headerIconClose" style="display: none;" name="close-outline"></ion-icon>
+      </a>
+    </div>
+    <!-- 搜尋bar -->
+    <div class="search_bar_content" style="display: none;">
+      <div class="search_bar">
+        <input type="text" placeholder="搜尋產品關鍵字" />
+        <a href="#" class="icon_input">
+          <ion-icon name="search"></ion-icon>
+        </a>
+      </div>
+    </div>
+    <!-- 輪播圖 -->
+    <div class="swiper-container swiperHomeSlide">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="product_feature.html">
+            <img src="img/banner.jpg" alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="product_feature.html">
+            <img src="img/banner.jpg" alt="">
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="product_feature.html">
+            <img src="img/banner.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <!-- icon -->
+    <div class="container">
+      <div class="icon_block">
+        <div class="icon_list">
+          <a href="#">
+            <img src="img/icon01.png" alt="">
+            <p>關於</p>
+          </a>
+          <a href="#">
+            <img src="img/icon02.png" alt="">
+            <p>升級VIP</p>
+          </a>
+          <a href="#">
+            <img src="img/icon03.png" alt="">
+            <p>直播</p>
+          </a>
+          <a href="#">
+            <img src="img/icon04.png" alt="">
+            <p>行動支付</p>
+          </a>
+          <a href="#">
+            <img src="img/icon05.png" alt="">
+            <p>社群</p>
+          </a>
+        </div>
+        <div class="ann_slide">
+          <div class="icon_ann"><img src="img/icon_ann.png" alt=""></div>
+          <div class="swiper-container swiperAnn">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                加入社群，不定時發放粉絲福利
+              </div>
+              <div class="swiper-slide">
+                週年慶全館85折
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <!-- 限時促銷 -->
+      <div class="d_flex">
+        <h2 class="title">限時促銷</h2>
+        <a href="#" class="link_more ml_auto">更多</a>
+      </div>
+      <div class="limit_list mb_2">
+        <div class="swiper-container swiperLimit">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <!-- item -->
+              <div class="card_limit">
+                <div class="image">
+                  <img src="img/product/02.jpg" alt="">
+                  <span class="img_sale"></span>
+                </div>
+                <div class="detail">
+                  <div class="name">好走的鞋子</div>
+                  <div class="price">
+                    <span class="main_price">$899</span>
+                    <span class="sale_price">$1299</span>
+                  </div>
+                  <div class="countdown">
+                    <h3>剩餘</h3>
+                    <div class="date">
+                      <span>18</span>
+                      時
+                      <span>21</span>
+                      分
+                      <span>05</span>
+                      秒
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- item -->
+              <div class="card_limit">
+                <div class="image">
+                  <img src="img/product/03.jpg" alt="">
+                </div>
+                <div class="detail">
+                  <div class="name">好走的鞋子</div>
+                  <div class="price">
+                    <span class="main_price">$899</span>
+                    <span class="sale_price">$1299</span>
+                  </div>
+                  <div class="countdown">
+                    <h3>剩餘</h3>
+                    <div class="date">
+                      <span>18</span>
+                      時
+                      <span>21</span>
+                      分
+                      <span>05</span>
+                      秒
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 新品首發 -->
+      <h2 class="title">新品首發</h2>
+      <div class="new_product_list mb_2">
+        <div class="swiper-container swiperNewPorduct">
+          <div class="swiper-wrapper">
+            <!-- item -->
+            <div class="swiper-slide">
+              <a href="product.html" class="card_product">
+                <div class="card_img">
+                  <img src="img/product/01.jpg" alt="" />
+                  <span>商店名稱</span>
+                </div>
+                <div class="info">
+                  <h4>
+                    產品名稱產品名稱產品名稱產品名稱
+                  </h4>
+                  <div class="price">
+                    <span class="main_price">$899</span>
+                    <span class="sale_price">$1299</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- item -->
+            <div class="swiper-slide">
+              <a href="product.html" class="card_product">
+                <div class="card_img">
+                  <img src="img/product/04.jpg" alt="" />
+                  <span>商店名稱</span>
+                </div>
+                <div class="info">
+                  <h4>
+                    產品名稱產品名稱產品名稱產品名稱
+                  </h4>
+                  <div class="price">
+                    <span class="main_price">$899</span>
+                    <span class="sale_price">$1299</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- item -->
+            <div class="swiper-slide">
+              <a href="product.html" class="card_product">
+                <div class="card_img">
+                  <img src="img/product/08.jpg" alt="" />
+                  <span>商店名稱</span>
+                </div>
+                <div class="info">
+                  <h4>
+                    產品名稱產品名稱產品名稱產品名稱
+                  </h4>
+                  <div class="price">
+                    <span class="main_price">$899</span>
+                    <span class="sale_price">$1299</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 館長推薦 -->
+      <h2 class="title">館長推薦</h2>
+      <div class="recommend_list mb_1">
+        <div class="swiper-container swiperRecommend">
+          <div class="swiper-wrapper">
+            <!-- item -->
+            <div class="swiper-slide">
+              <a href="product.html" class="card_product">
+                <div class="card_img">
+                  <img src="img/product/01.jpg" alt="" />
+                  <span>商店名稱</span>
+                </div>
+                <div class="info">
+                  <h4>
+                    產品名稱產品名稱產品名稱產品名稱
+                  </h4>
+                  <div class="price">
+                    <span class="main_price">$899</span>
+                    <span class="sale_price">$1299</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- item -->
+            <div class="swiper-slide">
+              <a href="product.html" class="card_product">
+                <div class="card_img">
+                  <img src="img/product/04.jpg" alt="" />
+                  <span>商店名稱</span>
+                </div>
+                <div class="info">
+                  <h4>
+                    產品名稱產品名稱產品名稱產品名稱
+                  </h4>
+                  <div class="price">
+                    <span class="main_price">$899</span>
+                    <span class="sale_price">$1299</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <!-- item -->
+            <div class="swiper-slide">
+              <a href="product.html" class="card_product">
+                <div class="card_img">
+                  <img src="img/product/08.jpg" alt="" />
+                  <span>商店名稱</span>
+                </div>
+                <div class="info">
+                  <h4>
+                    產品名稱產品名稱產品名稱產品名稱
+                  </h4>
+                  <div class="price">
+                    <span class="main_price">$899</span>
+                    <span class="sale_price">$1299</span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 一大三小 -->
+      <div class="home_block mb_2">
+        <a href="#" class="block_img_lg">
+          <img src="img/link01.png" alt="">
+        </a>
+        <div class="d_flex">
+          <a href="#" class="block_img_sm">
+            <img src="img/link02.png" alt="">
+          </a>
+          <a href="#" class="block_img_sm">
+            <img src="img/link03.png" alt="">
+          </a>
+          <a href="#" class="block_img_sm">
+            <img src="img/link04.png" alt="">
+          </a>
+        </div>
+      </div>
+      <!-- 新品首發 -->
+      <h2 class="title">新品首發</h2>
+      <div class="cate_content">
+        <div class="row_omo">
+          <div class="col-6">
+            <a href="product.html" class="card_product">
+              <div class="card_img">
+                <img src="img/product/01.jpg" alt="" />
+                <span>商店名稱</span>
+              </div>
+              <div class="info">
+                <h4>
+                  產品名稱產品名稱產品名稱產品名稱
+                </h4>
+                <div class="price">
+                  <span class="main_price">$899</span>
+                  <span class="sale_price">$1299</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="product.html" class="card_product">
+              <div class="card_img">
+                <img src="img/product/01.jpg" alt="" />
+                <span>商店名稱</span>
+              </div>
+              <div class="info">
+                <h4>
+                  產品名稱產品名稱產品名稱產品名稱
+                </h4>
+                <div class="price">
+                  <span class="main_price">$899</span>
+                  <span class="sale_price">$1299</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="product.html" class="card_product">
+              <div class="card_img">
+                <img src="img/product/01.jpg" alt="" />
+                <span>商店名稱</span>
+              </div>
+              <div class="info">
+                <h4>
+                  產品名稱產品名稱產品名稱產品名稱
+                </h4>
+                <div class="price">
+                  <span class="main_price">$899</span>
+                  <span class="sale_price">$1299</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="product.html" class="card_product">
+              <div class="card_img">
+                <img src="img/product/01.jpg" alt="" />
+                <span>商店名稱</span>
+              </div>
+              <div class="info">
+                <h4>
+                  產品名稱產品名稱產品名稱產品名稱
+                </h4>
+                <div class="price">
+                  <span class="main_price">$899</span>
+                  <span class="sale_price">$1299</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="product.html" class="card_product">
+              <div class="card_img">
+                <img src="img/product/01.jpg" alt="" />
+                <span>商店名稱</span>
+              </div>
+              <div class="info">
+                <h4>
+                  產品名稱產品名稱產品名稱產品名稱
+                </h4>
+                <div class="price">
+                  <span class="main_price">$899</span>
+                  <span class="sale_price">$1299</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6">
+            <a href="product.html" class="card_product">
+              <div class="card_img">
+                <img src="img/product/01.jpg" alt="" />
+                <span>商店名稱</span>
+              </div>
+              <div class="info">
+                <h4>
+                  產品名稱產品名稱產品名稱產品名稱
+                </h4>
+                <div class="price">
+                  <span class="main_price">$899</span>
+                  <span class="sale_price">$1299</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer_bar">
+      <ul>
+        <li>
+          <a href="#" class="active">
+            <img src="img/icon_footer01_h.svg" alt="">
+            <img class="img_active" src="img/icon_footer01.svg" alt="">
+            <p>首頁</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon_footer02_h.svg" alt="">
+            <img class="img_active" src="img/icon_footer02.svg" alt="">
+            <p>分類</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon_footer03_h.svg" alt="">
+            <img class="img_active" src="img/icon_footer03.svg" alt="">
+            <p>消息</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon_footer04_h.svg" alt="">
+            <img class="img_active" src="img/icon_footer04.svg" alt="">
+            <p>購物車</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon_footer05_h.svg" alt="">
+            <img class="img_active" src="img/icon_footer05.svg" alt="">
+            <p>會員</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- tool icon -->
+    <div class="tool_icon">
+      <ul>
+        <li>
+          <a href="#"><img src="img/icon_footer01_h.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icon_footer02_h.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icon_footer03_h.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icon_footer04_h.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icon_footer05_h.svg" alt=""></a>
+        </li>
+      </ul>
+      <a class="tool_icon_btn">
+        <img src="img/icon_menu.svg" alt="">
+        <img style="display: none;" height="18" src="img/icon_close.svg" alt="">
+      </a>
+    </div>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.1/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js?v11"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        scroll = $(window).scrollTop();
+        if (scroll >= 61) {
+          // $('.search_bar_content').addClass('sticky');
+        } else {
+          // $('.search_bar_content').removeClass('sticky');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>OMO</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.1/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/big_all.css?v10" />
+</head>
+
+<body>
+  <div class="main" id="top">
+    <!-- tab -->
+    <ul class="tabs">
+      <li class="scrollTo active" data-scroll="top" class="active">商品</li>
+      <li class="scrollTo" data-scroll="detail">詳情</li>
+      <li class="scrollTo" data-scroll="about">關聯</li>
+      <li class="scrollTo" data-scroll="recommend">推薦</li>
+    </ul>
+    <!-- tab1 商品詳情 -->
+    <div class="tab_content" id="top">
+      <!-- img -->
+      <div class="swiper-container swiperSingle">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="img/products/01.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/products/02.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/products/03.jpg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="icon_share">
+          <img src="img/icon/share.svg" alt="">
+        </div>
+        <div class="icon_like">
+          <img src="img/icon/heart.png" alt="">
+        </div>
+      </div>
+      <!-- name -->
+      <div class="p_info mb">
+        <h1 class="name">產品名稱產品名稱產品名稱產品名稱產品名稱</h1>
+        <div class="d_flex jcsb">
+          <div class="p_price d_flex">
+            <h2>$899</h2>
+            <s>市場價：$1099</s>
+          </div>
+        </div>
+      </div>
+      <!-- 店家 -->
+      <div class="p_store mb">
+        <img src="img/logo/04.jpg" alt="" />
+        <div class="name">店家名稱</div>
+        <a href="#" class="btn_outline">查看賣場</a>
+      </div>
+      <!-- 優惠活動 -->
+      <ul class="p_list">
+        <li class="popup_fill_btn" data-popup="popup_sale">
+          <h4>優惠</h4>
+          <p>查看目前優惠活動</p>
+          <img class="right" src="img/icon/right.png" alt="" />
+        </li>
+      </ul>
+    </div>
+    <!-- tab2 商品詳情 -->
+    <div class="tab_content" id="detail">
+      <h2 class="title_dots2">商品詳情</h2>
+      <div class="content">
+        <p>
+          / 材質 / <br />
+          牛皮<br />
+          真皮內裡與鞋墊<br />
+          鞋跟材質：ABS / 包裹牛皮
+        </p>
+        <img src="img/products/03.jpg" alt="" />
+        <p>
+          商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述
+        </p>
+        <p>
+          商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述
+        </p>
+        <p>
+          商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述
+        </p>
+      </div>
+    </div>
+    <!-- tab3 商品關聯 -->
+    <div class="tab_content" id="about">
+      <h2 class="title_dots2">關聯</h2>
+      <div class="content">
+        <img src="img/products/03.jpg" alt="" />
+        <p>
+          商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述
+        </p>
+        <p>
+          商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述
+        </p>
+        <p>
+          商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述
+        </p>
+      </div>
+    </div>
+    <!-- tab4 推薦 -->
+    <div class="tab_content" id="recommend">
+      <h2 class="title_dots2">推薦產品</h2>
+      <div class="row_omo recommend_list">
+        <div class="col-6">
+          <a href="product.html" class="card_product recommend">
+            <div class="card_img">
+              <img src="img/products/01.jpg" alt="" />
+              <div class="icon_like">
+                <img src="img/icon/heart.png" alt="">
+              </div>
+            </div>
+            <div class="info">
+              <h4>
+                產品名稱產品名稱產品名稱產品名稱
+              </h4>
+              <div class="price">
+                <span class="main_price">$899</span>
+                <span class="sale_price">$1299</span>
+                <div href="#" class="btn_add_icon togglePopup">＋</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="product.html" class="card_product recommend">
+            <div class="card_img">
+              <img src="img/products/02.jpg" alt="" />
+              <div class="icon_like">
+                <img src="img/icon/heart.png" alt="">
+              </div>
+            </div>
+            <div class="info">
+              <h4>
+                產品名稱產品名稱產品名稱產品名稱
+              </h4>
+              <div class="price">
+                <span class="main_price">$899</span>
+                <span class="sale_price">$1299</span>
+                <div href="#" class="btn_add_icon togglePopup">＋</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="product.html" class="card_product recommend">
+            <div class="card_img">
+              <img src="img/products/03.jpg" alt="" />
+              <div class="icon_like">
+                <img src="img/icon/heart.png" alt="">
+              </div>
+            </div>
+            <div class="info">
+              <h4>
+                產品名稱產品名稱產品名稱產品名稱
+              </h4>
+              <div class="price">
+                <span class="main_price">$899</span>
+                <span class="sale_price">$1299</span>
+                <div href="#" class="btn_add_icon togglePopup">＋</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="product.html" class="card_product recommend">
+            <div class="card_img">
+              <img src="img/products/04.jpg" alt="" />
+              <div class="icon_like">
+                <img src="img/icon/heart.png" alt="">
+              </div>
+            </div>
+            <div class="info">
+              <h4>
+                產品名稱產品名稱產品名稱產品名稱
+              </h4>
+              <div class="price">
+                <span class="main_price">$899</span>
+                <span class="sale_price">$1299</span>
+                <div href="#" class="btn_add_icon togglePopup">＋</div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6">
+          <a href="product.html" class="card_product recommend">
+            <div class="card_img">
+              <img src="img/products/05.jpg" alt="" />
+              <div class="icon_like">
+                <img src="img/icon/heart.png" alt="">
+              </div>
+            </div>
+            <div class="info">
+              <h4>
+                產品名稱產品名稱產品名稱產品名稱
+              </h4>
+              <div class="price">
+                <span class="main_price">$899</span>
+                <span class="sale_price">$1299</span>
+                <div href="#" class="btn_add_icon togglePopup">＋</div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <div class="footer_addcart">
+      <a href="#" class="btn_icon footerCartBtn">
+        <ion-icon name="cart-outline"></ion-icon>
+        <span>2</span>
+      </a>
+      <div class="btn_group">
+        <a href="#" class="btn btn_check togglePopup">立即購買</a>
+        <a href="#" class="btn btn_add togglePopup">加入購物車</a>
+      </div>
+    </div>
+    <!-- popup -->
+    <div class="popup">
+      <div class="popup_content">
+        <div class="content">
+          <div class="popup_close togglePopup">
+            <ion-icon name="close"></ion-icon>
+          </div>
+          <h3>產品名稱產品名稱產品名稱</h3>
+          <div class="list_choose">
+            <h4>容量</h4>
+            <ul>
+              <li>64</li>
+              <li class="active">128</li>
+              <li>256</li>
+            </ul>
+          </div>
+          <div class="list_choose">
+            <h4>顏色</h4>
+            <ul>
+              <li class="active">黑色</li>
+              <li>白色</li>
+              <li>藍色</li>
+            </ul>
+          </div>
+          <div class="price">NT9000</div>
+        </div>
+        <div class="popup_footer">
+          <div class="count">
+            <a href="#"><img src="img/icon/minus.png" alt="" /></a>
+            <span>3</span>
+            <a href="#"><img src="img/icon/plus.png" alt="" /></a>
+          </div>
+          <a href="#" class="btn_addcart addCartBtn togglePopup">加入購物車</a>
+        </div>
+      </div>
+    </div>
+    <!-- 優惠popup -->
+    <div class="popup_fill" id="popup_sale">
+      <div class="popup_header">
+        <h3>目前活動</h3>
+        <div class="close_popup colsePopupfill">
+          <ion-icon name="close"></ion-icon>
+        </div>
+      </div>
+      <div class="popup_fill_content">
+        <ul class="sale_list">
+          <li>
+            <div class="image"><img src="img/icon/sale01.png" alt=""></div>
+            <div class="info">
+              <h3>活動名稱活動名稱活動名稱活動名稱活動名稱活動名稱活動名稱活動名稱</h3>
+              <div class="date">活動期間 <span>2021.09.04</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="image"><img src="img/icon/sale02.png" alt=""></div>
+            <div class="info">
+              <h3>活動名稱活動名稱活動名稱活動名稱活動名稱活動名稱活動名稱活動名稱</h3>
+              <div class="date">活動期間 <span>2021.09.04</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="image"><img src="img/icon/sale01.png" alt=""></div>
+            <div class="info">
+              <h3>活動名稱活動名稱活動名稱活動名稱活動名稱活動名稱活動名稱活動名稱</h3>
+              <div class="date">活動期間 <span>2021.09.04</span></div>
+            </div>
+          </li>
+          <li>
+            <div class="image"><img src="img/icon/sale02.png" alt=""></div>
+            <div class="info">
+              <h3>活動名稱活動名稱活動名稱活動名稱活動名稱活動名稱活動名稱活動名稱</h3>
+              <div class="date">活動期間 <span>2021.09.04</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- mini cart -->
+    <div class="cart_mini">
+      <div class="cart_mini_container">
+        <div class="cart_mini_container_tile">
+          <div class="num">總金額 <span>NT90000</span></div>
+          <a href="#" class="btn">前往結帳</a>
+        </div>
+        <ul class="cart_list">
+          <li>
+            <div class="image">
+              <img src="img/products/01.jpg" alt="" />
+            </div>
+            <div class="info">
+              <div class="name">產品名稱產品名稱產品名稱</div>
+              <span class="label_attr">小份,紅色</span>
+              <div class="label_sale"><span>促銷</span></div>
+              <div class="price">
+                <div class="main_price">NT19000</div>
+                <div class="edit_num">
+                  <div class="count">
+                    <a href="#"><img src="img/icon/minus.png" alt="" /></a>
+                    <span>3</span>
+                    <a href="#"><img src="img/icon/plus.png" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="image">
+              <img src="img/products/03.jpg" alt="" />
+            </div>
+            <div class="info">
+              <div class="name">產品名稱產品名稱產品名稱</div>
+              <div class="label_sale"><span>促銷</span></div>
+              <div class="price">
+                <div class="main_price">NT19000</div>
+                <div class="edit_num">
+                  <div class="count">
+                    <a href="#"><img src="img/icon/minus.png" alt="" /></a>
+                    <span>3</span>
+                    <a href="#"><img src="img/icon/plus.png" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="image">
+              <img src="img/products/04.jpg" alt="" />
+            </div>
+            <div class="info">
+              <div class="name">產品名稱產品名稱產品名稱</div>
+              <div class="label_sale"><span>促銷</span></div>
+              <div class="price">
+                <div class="main_price">NT19000</div>
+                <div class="edit_num">
+                  <div class="count">
+                    <a href="#"><img src="img/icon/minus.png" alt="" /></a>
+                    <span>3</span>
+                    <a href="#"><img src="img/icon/plus.png" alt="" /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.1/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="js/main.js?v10"></script>
+  <script src="js/product.js?v10"></script>
+</body>
+
+</html>

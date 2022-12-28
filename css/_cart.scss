@@ -1,0 +1,230 @@
+.mb {
+  margin-bottom: 0.75em;
+}
+.ml_auto {
+  margin-left: auto;
+}
+// step
+.step_bar {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  justify-content: space-between;
+  color: $default;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  margin-bottom: 0.25em;
+  font-family: 'Lato', sans-serif;
+  .step_item {
+    position: relative;
+    display: flex;
+    padding: 10px 12px;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    &:nth-child(1) {
+      flex-shrink: 0;
+      width: 30%;
+    }
+    &:nth-child(2) {
+      flex-shrink: 0;
+      width: 45%;
+    }
+    &:nth-child(3) {
+      flex-shrink: 0;
+      width: 25%;
+    }
+    span {
+      border: 1px solid $default;
+      color: $default;
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border-radius: 100%;
+      margin-right: 4px;
+      font-size: 13px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    p {
+      position: relative;
+      z-index: 2;
+    }
+    &::after,
+    &::before {
+      content: '';
+      position: absolute;
+      right: -14px;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 19px 0 20px 16px;
+      border-color: transparent transparent transparent #fff;
+    }
+    &::before {
+      right: -16px;
+      border-color: transparent transparent transparent $default;
+    }
+    &:last-child {
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+    &.active {
+      background: $default;
+      color: #fff;
+      span {
+        color: #fff;
+        border-color: #fff;
+      }
+      &::after {
+        border-color: transparent transparent transparent $default;
+      }
+    }
+    &.nocheck {
+      &::after,
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+// cart
+.list_ul {
+  background: #fff;
+  margin-bottom: .5rem;
+  li {
+    padding: 0.75em;
+    border-bottom: 1px solid #eee;
+  }
+  .li_title {
+    display: flex;
+    font-size: .9em;
+    color: #8e8e8e;
+    align-items: center;
+    i {
+      color: #a1a1a1;
+      margin-right: 0.75rem;
+    }
+    svg {
+      color: #a1a1a1;
+      margin-right: 0.75rem;
+    }
+    p {
+    }
+  }
+  .li_item {
+    .tag {
+      padding: 0.25rem 0.5rem;
+      margin-right: 0.25rem;
+      margin-bottom: 0.25rem;
+      flex-wrap: wrap;
+      border-radius: 4px;
+      display: inline-block;
+
+      border: 1px solid #555;
+      color: #555;
+      &.active {
+        border: 1px solid $default;
+        color: $default;
+      }
+    }
+  }
+}
+
+.list_item {
+  display: flex;
+  background: #fff;
+  padding: 0.75em;
+  border-bottom: 1px solid #eee;
+  align-items: center;
+  .list_item_title {
+    flex-wrap: nowrap;
+    margin-right: 0.5rem;
+    min-width: 5.2em;
+    font-size: 0.9em;
+    color: #8e8e8e;
+  }
+  p {
+
+  }
+  i,svg {
+    margin-left: auto;
+  }
+}
+.list_detail {
+  background: #fff;
+  padding: .75em;
+  color: #8e8e8e;
+  p {
+    margin-bottom: 0.75em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.list_linepoint {
+  position: fixed;
+  bottom: 100px;
+  left: 0;
+  width: 100%;
+  input {
+    border: 1px solid rgb(181, 181, 181);
+    border-radius: 4px;
+    padding: .5em .75em;
+    &::placeholder {
+      color: rgb(181, 181, 181);
+    }
+  }
+}
+
+// menu icon
+.ecjia-menu .iconfont {
+  line-height: 0;
+  top: 20px;
+  font-size: 1em;
+}
+
+// 結帳 btn
+.list_item_check {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  background: #fff;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  .check_price {
+    padding: 1em 0.75em;
+    span {
+      color: $red;
+      margin-left: 0.5em;
+    }
+  }
+  .check_btn {
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 2em;
+    background: $default;
+    color: #fff;
+  }
+}
+
+
+.ecjia-storepickup {
+  padding: 0px 1rem;
+  font-size: 12px;
+  line-height: 1.4;
+  b {
+    font-weight: bold;
+  }
+}
+.ecjia-checkout .cart-order,.ecjia-checkout .cart-order,.list_item_check .check_price span,#formated_goods_price {
+  font-family: 'Lato', sans-serif; 
+}

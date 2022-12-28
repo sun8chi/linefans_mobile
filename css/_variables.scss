@@ -1,0 +1,40 @@
+@import url(https://at.alicdn.com/t/font_2734428_72s8iplqrzm.css);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+$default: #000;
+// $default: #ffa42e;
+$green: #31c297;
+$orange: #ecb768;
+$yellow: #F8D67C;
+$blue: #3bbfd7;
+$old: #ff8214;
+$dark: #262626;
+$red: #F24B4E;
+$gray: #979797;
+$font_num: 'Lato',
+sans-serif;
+$font_date: 'Lato',
+sans-serif;
+
+.font_num {
+    font-family: $font_num;
+}
+
+.bg_blue {
+    background: $blue !important;
+}
+
+.bg_green {
+    background: $green !important;
+}
+
+.bg_red {
+    background: $red !important;
+}
+
+.text_red {
+    color: $red !important;
+}
+
+.bg_gray {
+    background: $gray !important;
+}
