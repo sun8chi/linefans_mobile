@@ -1372,6 +1372,28 @@ select::-ms-expand {
   margin-bottom: 1rem;
 }
 
+.sale_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.sale_block a {
+  display: block;
+}
+.sale_block a:first-child {
+  margin-right: 4px;
+}
+.sale_block a:last-child {
+  margin-left: 4px;
+}
+.sale_block img {
+  width: 100%;
+  border-radius: 16px;
+}
+
 a.card_product {
   color: #333;
   display: block;

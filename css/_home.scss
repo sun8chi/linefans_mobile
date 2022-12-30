@@ -183,3 +183,23 @@
     margin-bottom: 1rem;
   }
 }
+
+.sale_block {
+  display: flex;
+  align-items: center;
+
+  a {
+    display: block;
+    &:first-child {
+      margin-right: 4px;
+    }
+    &:last-child {
+      margin-left: 4px;
+    }
+  }
+
+  img {
+    width: 100%;
+    border-radius: 16px;
+  }
+}
