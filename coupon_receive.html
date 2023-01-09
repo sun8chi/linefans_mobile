@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>LINEFans</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.1/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/all.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <h1>領券中心</h1>
+      <a class="header_icon back" href="javascript:history.back()">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </a>
+      <a class="btn_history" href="coupon_history.html">歷史紀錄</a>
+    </div>
+
+    <!-- tab -->
+    <ul class="nav-tab">
+      <li><a href="coupon.html">全部</a></li>
+      <li class="active"><a href="coupon_receive.html">已領取</a></li>
+      <li><a href="#">運費抵用券</a></li>
+      <li><a href="#">賣場優惠券</a></li>
+    </ul>
+
+    <div class="container">
+       <!-- 優惠券 -->
+      <div class="coupon-list receive">
+        <div class="coupon freight">
+          <div class="coupon-tag">
+            限量
+          </div>
+          <div class="coupon-main">
+            <div class="coupon-theme">
+              <img src="img/coupon_car.png" alt="">
+              <p>賣場優惠券</p>
+            </div>
+            <div class="coupon-info">
+              <p class="discount">全館$1,000免運</p>
+              <p class="date">2023.01.05 起生效</p>
+            </div>
+          </div>
+          <div class="coupon-action">
+            <a class="take" href="coupon_use.html">使用</a>
+            <a class="rule" href="coupon_rule.html">使用說明</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer_bar">
+      <ul>
+        <li>
+          <a href="#" class="active">
+            <img src="img/icon_footer01_h.svg" alt="">
+            <img class="img_active" src="img/icon_footer01.svg" alt="">
+            <p>首頁</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon_footer02_h.svg" alt="">
+            <img class="img_active" src="img/icon_footer02.svg" alt="">
+            <p>分類</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon_footer03_h.svg" alt="">
+            <img class="img_active" src="img/icon_footer03.svg" alt="">
+            <p>消息</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon_footer04_h.svg" alt="">
+            <img class="img_active" src="img/icon_footer04.svg" alt="">
+            <p>購物車</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon_footer05_h.svg" alt="">
+            <img class="img_active" src="img/icon_footer05.svg" alt="">
+            <p>會員</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- tool icon -->
+    <div class="tool_icon">
+      <ul>
+        <li>
+          <a href="#"><img src="img/icon_footer01_h.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icon_footer02_h.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icon_footer03_h.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icon_footer04_h.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icon_footer05_h.svg" alt=""></a>
+        </li>
+      </ul>
+      <a class="tool_icon_btn">
+        <img src="img/icon_menu.svg" alt="">
+        <img style="display: none;" height="18" src="img/icon_close.svg" alt="">
+      </a>
+    </div>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.1/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js?v11"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        scroll = $(window).scrollTop();
+        if (scroll >= 61) {
+          // $('.search_bar_content').addClass('sticky');
+        } else {
+          // $('.search_bar_content').removeClass('sticky');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

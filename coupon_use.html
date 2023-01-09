@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>LINEFans</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.1/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/all.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <h1>使用優惠券</h1>
+      <a class="header_icon back" href="javascript:history.back()">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </a>
+    </div>
+
+    <div class="container">
+      <!-- 優惠券 -->
+      <div class="coupon-list use">
+        <div class="coupon limit">
+          <div class="coupon-tag">
+            限量
+          </div>
+          <div class="coupon-main">
+            <div class="coupon-theme">
+              <img src="img/coupon_store.png" alt="">
+              <p>賣場優惠券</p>
+            </div>
+            <div class="coupon-info">
+              <p class="discount">8.5折</p>
+              <p>低消滿$1,500可使用</p>
+              <p class="note">最高折抵$200</p>
+              <p class="date">2023.01.05 起生效</p>
+            </div>
+          </div>
+          <div class="coupon-action">
+            <a class="take" href="#">使用</a>
+            <a class="rule" href="coupon_rule.html">使用說明</a>
+          </div>
+        </div>
+      </div>
+      <div class="title-line">
+        此優惠券可用的商品
+      </div>
+      <!-- 商品 -->
+      <div class="cate_content">
+        <div class="row_omo">
+          <div class="col-6">
+            <div class="card_product">
+              <div class="card_img togglePopup" popup-id="popupDetail">
+                <img src="img/product/01.jpg" alt="" />
+                <span>商店名稱</span>
+              </div>
+              <div class="info">
+                <h4>
+                  產品名稱產品名稱產品名稱產品名稱
+                </h4>
+                <div class="price">
+                  <span class="main_price">$899</span>
+                  <span class="sale_price">$1299</span>
+                  <div class="add_btn togglePopup" popup-id="popupAttr"><ion-icon name="add-outline"></ion-icon></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- tool icon -->
+    <div class="tool_icon">
+      <ul>
+        <li>
+          <a href="#"><img src="img/icon_footer01_h.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icon_footer02_h.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icon_footer03_h.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icon_footer04_h.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icon_footer05_h.svg" alt=""></a>
+        </li>
+      </ul>
+      <a class="tool_icon_btn">
+        <img src="img/icon_menu.svg" alt="">
+        <img style="display: none;" height="18" src="img/icon_close.svg" alt="">
+      </a>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer_addcart">
+      <a href="#" class="btn_icon footerCartBtn active">
+        <ion-icon name="cart-outline"></ion-icon>
+        <span>2</span>
+      </a>
+      <div class="footer_total"><small>總計NT</small> <span class="price">9999</span></div>
+      <div class="btn_group">
+        <a href="#" class="btn btn_add">結帳</a>
+      </div>
+    </div>
+    <!-- popup 選擇規格 -->
+    <div class="popup popupAttr">
+      <div class="popup_content">
+        <div class="popup_close closePopup">
+          <h3>選擇規格</h3>
+          <ion-icon name="close"></ion-icon>
+        </div>
+        <div class="content">
+          <h3>產品名稱產品名稱產品名稱</h3>
+          <div class="list_choose">
+            <h4>容量</h4>
+            <ul>
+              <li>64</li>
+              <li class="active">128</li>
+              <li>256</li>
+            </ul>
+          </div>
+          <div class="list_choose">
+            <h4>顏色</h4>
+            <ul>
+              <li class="active">黑色</li>
+              <li>白色</li>
+              <li>藍色</li>
+            </ul>
+          </div>
+          <div class="price">NT9000</div>
+        </div>
+        <div class="popup_footer">
+          <div class="count">
+            <a href="#"><ion-icon name="remove-outline"></ion-icon></a>
+            <span>3</span>
+            <a href="#"><ion-icon name="add-outline"></ion-icon></a>
+          </div>
+          <a href="#" class="btn_addcart addCartBtn togglePopup">加入購物車</a>
+        </div>
+      </div>
+    </div>
+    <!-- popup 產品詳情 -->
+    <div class="popup popupDetail">
+      <div class="popup_content">
+        <div class="popup_close closePopup">
+          <h3>產品詳情</h3>
+          <ion-icon name="close"></ion-icon>
+        </div>
+        <div class="content">
+          <p>
+            / 材質 / <br />
+            牛皮<br />
+            真皮內裡與鞋墊<br />
+            鞋跟材質：ABS / 包裹牛皮
+          </p>
+          <img src="img/product/03.jpg" alt="" />
+          <p>
+            商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述
+          </p>
+          <p>
+            商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述
+          </p>
+          <p>
+            商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述商品描述
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- mini cart -->
+    <div class="cart_mini">
+      <div class="cart_mini_container">
+        <div class="cart_mini_container_tile">
+          <div class="num">總金額 <span>NT90000</span></div>
+          <a href="#" class="btn">前往結帳</a>
+        </div>
+        <ul class="cart_list">
+          <!-- item -->
+          <li>
+            <div class="image">
+              <img src="img/product/01.jpg" alt="" />
+            </div>
+            <div class="info">
+              <div class="name">產品名稱產品名稱產品名稱</div>
+              <div class="price">
+                <div class="main_price">NT19000</div>
+              </div>
+            </div>
+            <div class="edit_num">
+              <div class="count">
+                <a href="#"><ion-icon name="remove-outline"></ion-icon></a>
+                <span>3</span>
+                <a href="#"><ion-icon name="add-outline"></ion-icon></a>
+              </div>
+            </div>
+          </li>
+          <!-- item -->
+          <li>
+            <div class="image">
+              <img src="img/product/01.jpg" alt="" />
+            </div>
+            <div class="info">
+              <div class="name">產品名稱產品名稱產品名稱</div>
+              <div class="price">
+                <div class="main_price">NT19000</div>
+              </div>
+            </div>
+            <div class="edit_num">
+              <div class="count">
+                <a href="#"><ion-icon name="remove-outline"></ion-icon></a>
+                <span>3</span>
+                <a href="#"><ion-icon name="add-outline"></ion-icon></a>
+              </div>
+            </div>
+          </li>
+          <!-- item -->
+          <li>
+            <div class="image">
+              <img src="img/product/01.jpg" alt="" />
+            </div>
+            <div class="info">
+              <div class="name">產品名稱產品名稱產品名稱</div>
+              <div class="price">
+                <div class="main_price">NT19000</div>
+              </div>
+            </div>
+            <div class="edit_num">
+              <div class="count">
+                <a href="#"><ion-icon name="remove-outline"></ion-icon></a>
+                <span>3</span>
+                <a href="#"><ion-icon name="add-outline"></ion-icon></a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.1/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js?v11"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        scroll = $(window).scrollTop();
+        if (scroll >= 61) {
+          // $('.search_bar_content').addClass('sticky');
+        } else {
+          // $('.search_bar_content').removeClass('sticky');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

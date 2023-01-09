@@ -39,11 +39,18 @@ $(document).ready(function () {
     $(this).toggleClass('active');
   });
 
-  // 加入購物車
+  // 打開popup
   $('.togglePopup').click(function (e) {
     e.preventDefault();
-    $('.popup').toggleClass('show');
+    let id = $(this).attr('popup-id');
+    $('.'+id).toggleClass('show');
     $('.cart_mini').removeClass('show');
+  });
+
+  // 關閉popup
+  $('.closePopup').click(function (e) { 
+    e.preventDefault();
+    $('.popup.show').removeClass('show')
   });
 
   // header
@@ -65,6 +72,19 @@ $(document).ready(function () {
     e.preventDefault();
     $('.tool_icon_btn img').toggle()
     $('.tool_icon ul').toggleClass('active');
+  });
+
+
+  // 迷你購物車
+  $('.footerCartBtn.active').click(function (e) {
+    e.preventDefault();
+    $('.cart_mini').toggleClass('show');
+  });
+  $('.cart_mini').click(function (e) {
+    e.preventDefault();
+    if ($(e.target).attr('class') == 'cart_mini show' || $(e.target).attr('class') == 'cart_mini cart_mini_up show') {
+      $('.cart_mini').removeClass('show');
+    }
   });
 });
 

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>LINEFans</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.1/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/all.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="header">
+      <h1>使用規則說明</h1>
+      <a class="header_icon back" href="javascript:history.back()">
+        <ion-icon name="chevron-back-outline"></ion-icon>
+      </a>
+    </div>
+
+    <div class="container">
+      <!-- 優惠券 -->
+      <div class="coupon-list rule">
+        <div class="coupon limit">
+          <div class="coupon-tag">
+            限量
+          </div>
+          <div class="coupon-main">
+            <div class="coupon-theme">
+              <img src="img/coupon_store.png" alt="">
+              <p>賣場優惠券</p>
+            </div>
+            <div class="coupon-info">
+              <p class="discount">8.5折</p>
+              <p>低消滿$1,500可使用</p>
+              <p class="note">最高折抵$200</p>
+              <p class="date">2023.01.05 起生效</p>
+            </div>
+          </div>
+          <div class="coupon-action">
+            <a class="take" href="#">使用</a>
+            <a class="rule" href="#">使用說明</a>
+          </div>
+        </div>
+      </div>
+      <!-- 優惠券規則 -->
+      <div class="coupon-rule">
+        <ul>
+          <li>
+            <h5>優惠內容</h5>
+            <p>低消滿$1,500打8.5折！最高折抵$200</p>
+          </li>
+          <li>
+            <h5>有效期限</h5>
+            <p>2023.01.05-2024.01.05</p>
+          </li>
+          <li>
+            <h5>裝置</h5>
+            <p>適用於所有裝置</p>
+          </li>
+          <li>
+            <h5>商品</h5>
+            <p>適用於全部商品</p>
+          </li>
+          <li>
+            <h5>付款</h5>
+            <p>適用於所有付款方式</p>
+          </li>
+          <li>
+            <h5>物流</h5>
+            <p>適用於所有物流方式</p>
+          </li>
+          <li>
+            <h5>使用規則</h5>
+            <p>您的訂單享用8.5折，優惠券有效期限至2024.01.05，最低消費須滿$1,500，同一人/同一帳號限用一次，適用本公司承諾的付款方式。</p>
+          </li>
+        </ul>
+      </div>
+      <a class="btn btn_lg btn_primary" href="coupon_use.html">使用</a>
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer_bar">
+      <ul>
+        <li>
+          <a href="#" class="active">
+            <img src="img/icon_footer01_h.svg" alt="">
+            <img class="img_active" src="img/icon_footer01.svg" alt="">
+            <p>首頁</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon_footer02_h.svg" alt="">
+            <img class="img_active" src="img/icon_footer02.svg" alt="">
+            <p>分類</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon_footer03_h.svg" alt="">
+            <img class="img_active" src="img/icon_footer03.svg" alt="">
+            <p>消息</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon_footer04_h.svg" alt="">
+            <img class="img_active" src="img/icon_footer04.svg" alt="">
+            <p>購物車</p>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="img/icon_footer05_h.svg" alt="">
+            <img class="img_active" src="img/icon_footer05.svg" alt="">
+            <p>會員</p>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- tool icon -->
+    <div class="tool_icon">
+      <ul>
+        <li>
+          <a href="#"><img src="img/icon_footer01_h.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icon_footer02_h.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icon_footer03_h.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icon_footer04_h.svg" alt=""></a>
+        </li>
+        <li>
+          <a href="#"><img src="img/icon_footer05_h.svg" alt=""></a>
+        </li>
+      </ul>
+      <a class="tool_icon_btn">
+        <img src="img/icon_menu.svg" alt="">
+        <img style="display: none;" height="18" src="img/icon_close.svg" alt="">
+      </a>
+    </div>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.1/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js?v11"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        scroll = $(window).scrollTop();
+        if (scroll >= 61) {
+          // $('.search_bar_content').addClass('sticky');
+        } else {
+          // $('.search_bar_content').removeClass('sticky');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
