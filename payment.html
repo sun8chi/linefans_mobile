@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>LINEFans</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.1/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/all.css" />
+</head>
+
+<body>
+  <div class="main">
+    <div class="container">
+      <div class="text_right">
+        <a href="#" class="info_btn mb_1"> <ion-icon name="information-circle"></ion-icon>集點兌換說明</a>
+      </div>
+      <div class="store_rounded">
+        <img src="img/logo/02.jpg" alt="">
+        <p>小明的店</p>
+      </div>
+      <p class="gray_txt">消費滿100元可以參與集點</p>
+      <div class="form_group input_payment">
+        <input type="text" placeholder="請輸入消費金額" inputmode="numeric">
+      </div>
+      <div class="payment_sale">
+        <!-- start 如果沒有優惠隱藏這段 -->
+        <ion-icon name="checkmark-circle"></ion-icon>
+        <p>消費2000減200</p>
+        <!-- end 如果沒有優惠隱藏這段 -->
+      </div>
+      <div class="payment_points">
+        <div class="switch_item">
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider_round"></span>
+          </label>
+          <p>使用3點兌換商家優惠</p>
+        </div>
+        <div class="points_last">您目前剩餘點數：10點</div>
+      </div>
+      <div class="payment_money">NT2300</div>
+      <a class="btn btn_lg btn_primary rounded" href="#">確認付款</a>
+    </div>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.1/swiper-bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js?v11"></script>
+  <script>
+    $(document).ready(function () {
+      $(window).scroll(function () {
+        scroll = $(window).scrollTop();
+        if (scroll >= 61) {
+          // $('.search_bar_content').addClass('sticky');
+        } else {
+          // $('.search_bar_content').removeClass('sticky');
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

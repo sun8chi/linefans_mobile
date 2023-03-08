@@ -1,0 +1,99 @@
+.store_rounded {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    img {
+        width: 80px;
+        border-radius: 100%;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+}
+
+.input_payment {
+    padding: 0;
+    background: transparent;
+    border: 0;
+
+    input {
+        border-radius: 50px;
+        border: 1px solid #DBDBDB;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        margin: 0;
+        margin-bottom: 1rem;
+        font-family: $font_num;
+        font-weight: bold;
+    }
+}
+
+.gray_txt {
+    color: #838383;
+    margin-left: 1.25rem;
+    margin-bottom: .5rem;
+    display: block;
+}
+
+a.info_btn {
+    background: #fff;
+    border-radius: 50px;
+    color: #838383;
+    background: #fff;
+    padding: .35rem .5rem;
+    display: inline-block;
+    vertical-align: middle;
+
+    ion-icon {
+        margin-right: 0.25rem;
+    }
+}
+
+.payment_sale {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    margin-left: 1.25rem;
+    min-height: 3rem;
+
+    ion-icon {
+        color: #2F6CAE;
+        font-size: 1.5rem;
+        margin-right: 0.25rem;
+    }
+}
+
+.payment_points {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.switch_item {
+    display: flex;
+    align-items: center;
+
+    p {
+        margin-left: 0.25rem;
+    }
+}
+
+.points_last {
+    font-size: 0.9rem;
+    color: #838383;
+}
+
+.payment_money {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem;
+    font-family: $font_num;
+    font-weight: bold;
+    color: $red;
+}
