@@ -164,7 +164,7 @@ img {
 
 .btn_lg {
   font-size: 1rem;
-  padding: 0.9rem 0.75rem;
+  padding: 1.25rem 0.75rem;
 }
 
 .btn_purple {
@@ -3465,4 +3465,80 @@ a.info_btn ion-icon {
   font-family: "Lato", sans-serif;
   font-weight: bold;
   color: #DB6D58;
+}
+
+.exchange_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5rem 0;
+}
+.exchange_top .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.exchange_top .user img {
+  width: 40px;
+  border-radius: 50%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.exchange_top .user p {
+  font-weight: bold;
+  margin-left: 1rem;
+}
+.exchange_top .date {
+  color: #979797;
+}
+
+.exchange_product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: calc(100vw - 30px);
+  color: #fff;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+.exchange_product .p_name {
+  padding: 2rem 2rem 3rem 2rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  font-size: 1.5rem;
+  border-radius: 16px 16px 0 0;
+}
+.exchange_product .points {
+  margin-top: auto;
+  margin-left: auto;
+  font-size: 2.6rem;
+  padding: 3rem 2rem 2rem 2rem;
+  border-radius: 0 0 16px 16px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0)));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  width: 100%;
+  text-align: right;
+}
+
+.exchange_info {
+  padding: 1rem 0 2rem 0;
+  line-height: 1.5;
+  font-size: 1.1rem;
 }

@@ -1,3 +1,63 @@
-.exchange {
-    
+.exchange_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+
+    .user {
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 40px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        p {
+            font-weight: bold;
+            margin-left: 1rem;
+        }
+    }
+
+    .date {
+        color: $gray;
+    }
+}
+
+.exchange_product {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vw - 30px);
+    color: #fff;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+
+    .p_name {
+        padding: 2rem 2rem 3rem 2rem;
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+        font-size: 1.5rem;
+        border-radius: 16px 16px 0 0;
+    }
+
+    .points {
+        margin-top: auto;
+        margin-left: auto;
+        font-size: 2.6rem;
+        padding: 3rem 2rem 2rem 2rem;
+        border-radius: 0 0 16px 16px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+        width: 100%;
+        text-align: right;
+    }
+}
+
+.exchange_info {
+    padding: 1rem 0 2rem 0;
+    line-height: 1.5;
+    font-size: 1.1rem;
 }
